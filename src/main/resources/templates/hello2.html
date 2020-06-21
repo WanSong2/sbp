@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>hello2</title>
+</head>
+<body>
+	<h1>Thymeleaf Test Page</h1>
+	<h3 th:text=${uname}></h3>
+	
+	<div th:if="${user}">
+		<div th:text="${user}"></div>
+		<div th:object="${user}">Thymeleaf Test : <span th:text="|*{userName}|" /></div>
+		<div th:text="${user.userName}"></div>
+	</div>
+	
+	
+	<div th:unless=${user}>
+		<div>No User!!</div>
+	</div>
+
+	<ul>
+		<li th:each="data: ${users}" th:text="${data}"></li>
+	</ul>
+	
+	
+	<a th:href="@{http://localhost:8080/hello}">HELLO</a>
+</body>
+</html>

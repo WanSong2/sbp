@@ -19,7 +19,7 @@ import com.jade.sbp.domain.User;
 import com.jade.sbp.mapper.UserMapper;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+//@SpringBootTest
 class SbpApplicationTests {
 
 	@Autowired
