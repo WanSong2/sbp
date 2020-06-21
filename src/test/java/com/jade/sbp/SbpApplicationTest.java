@@ -1,22 +1,47 @@
 package com.jade.sbp;
 
+import static org.junit.Assert.assertEquals;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
 import javax.sql.DataSource;
 
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
+import com.jade.sbp.domain.User;
+import com.jade.sbp.mapper.UserMapper;
+
+@RunWith(SpringRunner.class)
 @SpringBootTest
 class SbpApplicationTests {
 
 	@Autowired
 	private DataSource ds;
 	
+	@Autowired
+	private UserMapper mapper;
+	
+	
 	@Test
+	public void testUserMapper() throws Exception {
+		User user = mapper.getLoginInfo("admin");
+		//System.out.println("User>>" + user);
+		//assertEquals("WanSong", user);
+		
+		String uname = mapper.getUname("Bill");
+		System.out.println("uname>>" + uname);
+		assertEquals("Bill", uname);
+	}
+	
+	
+	@Ignore @Test
 	public void testDataSource() throws Exception {
 		System.out.println("DS=" + ds);	
 		try (Connection conn = ds.getConnection()){				
