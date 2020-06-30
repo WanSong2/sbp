@@ -19,7 +19,7 @@ public class HelloController {
 
 	@RequestMapping("/hello")
 	public String hello() {
-		return "Hello 스프링부트!!";
+		return "Hello 스프링부트!!...";
 	}
 	
 	@RequestMapping(value="/helloUser/{userID}", method = RequestMethod.GET)
