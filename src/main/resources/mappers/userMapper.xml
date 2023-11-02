@@ -3,8 +3,8 @@
 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.jade.sbp.mapper.UserMapper">
-	<select id="getLoginInfo" resultType="com.jade.sbp.domain.User">
+<mapper namespace="com.songw.sbp.mapper.UserMapper">
+	<select id="getLoginInfo" resultType="com.songw.sbp.domain.User">
 		select * from User where userID=#{userID}
 	</select>
 </mapper>

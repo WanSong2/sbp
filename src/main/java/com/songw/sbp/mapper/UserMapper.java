@@ -1,11 +1,11 @@
-package com.jade.sbp.mapper;
+package com.songw.sbp.mapper;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
-import com.jade.sbp.domain.User;
+import com.songw.sbp.domain.User;
 
 public interface UserMapper {
 	@Select("select * from User where userID=#{userID}")

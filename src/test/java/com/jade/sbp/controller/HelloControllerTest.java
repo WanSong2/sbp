@@ -22,7 +22,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.web.client.RestTemplate;
 
-import com.jade.sbp.domain.User;
+import com.songw.sbp.domain.User;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -43,7 +43,7 @@ public class HelloControllerTest {
 		assertThat(hello.getStatusCode()).isEqualTo(HttpStatus.OK);
 		assertThat(hello.getBody().equals("Hello 스프링부트!!"));
 		
-		
+
 		String uid = "Bill";
 		ResponseEntity<User> helloUser = restTemplate.getForEntity("/helloUser/" + uid , User.class);
 		

@@ -1,4 +1,4 @@
-package com.jade.sbp.domain;
+package com.songw.sbp.domain;
 
 import java.util.Date;
 

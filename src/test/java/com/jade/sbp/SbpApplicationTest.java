@@ -15,8 +15,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.jade.sbp.domain.User;
-import com.jade.sbp.mapper.UserMapper;
+import com.songw.sbp.domain.User;
+import com.songw.sbp.mapper.UserMapper;
 
 @RunWith(SpringRunner.class)
 //@SpringBootTest

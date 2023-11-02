@@ -1,4 +1,4 @@
-package com.jade.sbp.interceptor;
+package com.songw.sbp.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

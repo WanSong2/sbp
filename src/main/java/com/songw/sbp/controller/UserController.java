@@ -1,4 +1,4 @@
-package com.jade.sbp.controller;
+package com.songw.sbp.controller;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.jade.sbp.domain.User;
-import com.jade.sbp.mapper.UserMapper;
+import com.songw.sbp.domain.User;
+import com.songw.sbp.mapper.UserMapper;
 
 @Controller
 public class UserController {

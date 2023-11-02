@@ -1,4 +1,4 @@
-package com.jade.sbp.controller;
+package com.songw.sbp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jade.sbp.domain.User;
-import com.jade.sbp.mapper.UserMapper;
+import com.songw.sbp.domain.User;
+import com.songw.sbp.mapper.UserMapper;
 
 @RestController
 public class HelloController {
@@ -19,6 +19,8 @@ public class HelloController {
 
 	@RequestMapping("/hello")
 	public String hello() {
+		Calculator cal = n -> n + 1;
+		System.out.println(cal.calc(2));
 		return "Hello 스프링부트!!...";
 	}
 	
@@ -35,4 +37,8 @@ public class HelloController {
 		
 	}
 	
+}
+
+interface Calculator {
+	  int calc(int n);
 }

@@ -1,10 +1,10 @@
-package com.jade.sbp;
+package com.songw.sbp;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.jade.sbp.interceptor.HelloInterceptor;
+import com.songw.sbp.interceptor.HelloInterceptor;
 
 @Configuration
 public class SbpWebMvcConfig implements WebMvcConfigurer {
